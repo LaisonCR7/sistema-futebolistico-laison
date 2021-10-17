@@ -24,6 +24,10 @@ export default function Home({ data }) {
                   <div className={styles.ligaNames}>
                     <span>{liga.abbr}</span>
                     <p>{liga.name}</p>
+                    <p className={styles.btnClassic}>
+                      Classificação da Liga {">"}
+                      {">"}
+                    </p>
                   </div>
                 </a>
               </Link>
