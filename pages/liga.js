@@ -1,17 +1,19 @@
+import styles from "../styles/liga.module.css";
+
 export default function liga({ IndividualLiga, timesClassif }) {
   console.log(timesClassif);
   return (
-    <>
+    <div className={styles.container}>
       <h1>{IndividualLiga.name}</h1>
 
-      <ul>
+      <ol className={styles.timesClassif}>
         {timesClassif.map((timeClassif, index) => (
-          <li key={index}>
+          <li key={index} className={styles.timeClassif}>
             <a>{timeClassif.team.displayName}</a>
           </li>
         ))}
-      </ul>
-    </>
+      </ol>
+    </div>
   );
 }
 

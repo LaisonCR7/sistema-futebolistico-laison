@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.container h1 {
+  color: #e84545;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+.timesClassif {
+  width: 50%;
+}
+
+.timeClassif {
+  text-align: center;
+
+  background-color: #f78812;
+  color: #fff;
+
+  padding: 1rem;
+  margin: 0.5rem;
+
+  border-radius: 10px;
+}
+
+.timeClassif:nth-child(-n + 4) {
+  background-color: #39a388;
+}
+
+.timeClassif:nth-last-child(-n + 4) {
+  background-color: #e84545;
+}
