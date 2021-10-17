@@ -4,8 +4,10 @@ export default function liga({ IndividualLiga, timesClassif }) {
   console.log(timesClassif);
   return (
     <div className={styles.container}>
+      {/* Title da Liga */}
       <h1>{IndividualLiga.name}</h1>
 
+      {/* Lista de Classificação dos times da liga */}
       <ol className={styles.timesClassif}>
         {timesClassif.map((timeClassif, index) => (
           <li key={index} className={styles.timeClassif}>
@@ -17,6 +19,7 @@ export default function liga({ IndividualLiga, timesClassif }) {
   );
 }
 
+// REQUISÂO da API da classificação dos times de cada liga Via ServerSideProps
 export async function getServerSideProps({ query }) {
   const id = query.id;
   try {
