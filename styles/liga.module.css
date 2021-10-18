@@ -12,6 +12,7 @@
   color: #e84545;
   font-weight: bold;
   margin-bottom: 4rem;
+  margin: 1rem;
 }
 
 .timesClassif {
@@ -44,4 +45,14 @@
 
 .timeClassif:nth-last-child(-n + 4) {
   background-color: #e84545;
+}
+
+@media (max-width: 768px) {
+  .timesClassif {
+    width: 95%;
+  }
+
+  .timeClassif {
+    /* text-align: left; */
+  }
 }
